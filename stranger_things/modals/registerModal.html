@@ -1,0 +1,51 @@
+<!-- Modal HTML -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./modals/modals.js"></script>
+    <link rel="stylesheet" href="./modals/modalstyle.css" />
+</head>
+
+<body>
+    <form id="register-form">
+        <div class="modal-header">
+            <span id="title">
+                <h4 class="modal-title">Register</h4>
+            </span>
+            <span id="close-register">
+                <button type="button" id="close-button" class="close-register" data-dismiss="modal"
+                    aria-hidden="true">&times;</button>
+            </span>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" class="form-control" required id="username-register">
+            </div>
+            <div class="form-group">
+                <div class="clearfix">
+                    <label>Password - Must be at least 8 characters</label>
+                </div>
+
+                <input type="password" class="form-control" required id="password-register">
+            </div>
+            <div class="form-group">
+                <div class="clearfix">
+                    <label>Re-enter Password</label>
+                </div>
+
+                <input type="password" class="form-control" required id="password-register-reenter">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" disabled class="btn btn-primary pull-right" title="Register"
+                id="register-submit">Register</button>
+        </div>
+    </form>
+</body>
+
+</html>

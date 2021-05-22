@@ -1,0 +1,37 @@
+<!-- Modal HTML -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./modals/modals.js"></script>
+
+    <link rel="stylesheet" href="./modals/modalstyle.css" />
+</head>
+
+<body>
+    <form id="message-form">
+        <div class="modal-header">
+            <span id="title">
+                <h4 class="modal-title">Send Message Form</h4>
+            </span>
+            <span id="close-message">
+                <button type="button" id="close-button" class="close-message" data-dismiss="modal"
+                    aria-hidden="true">&times;</button>
+            </span>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label>Message</label>
+                <textarea class="form-control" id="message-content" placeholder="Enter text" rows="3"
+                    cols="80"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary pull-right" title="Login" id="message-submit">Send</button>
+            </div>
+    </form>
+</body>
+
+</html>

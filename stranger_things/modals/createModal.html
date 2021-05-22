@@ -1,0 +1,52 @@
+<!-- Modal HTML -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./modals/modals.js"></script>
+    <link rel="stylesheet" href="./modals/modalstyle.css" />
+</head>
+
+<body>
+    <form id="create-form">
+        <div class="modal-header">
+            <span id="title">
+                <h4 class="modal-title">Create Post Form</h4>
+            </span>
+            <span id="close-login">
+                <button type="button" id="close-button" class="close-login" data-dismiss="modal"
+                    aria-hidden="true">&times;</button>
+            </span>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" placeholder="Enter title" required id="post-title">
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                <textarea class="form-control" placeholder="Enter text" required id="post-description" rows="5"
+                    cols="140"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Price</label>
+                <input type="text" class="form-control" placeholder="Enter price" required id="post-price">
+            </div>
+            <div class="form-group">
+                <label>Location</label>
+                <input type="text" class="form-control" placeholder="Enter location" required id="post-location">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="remember"> Will Deliver?</label>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary pull-right" title="Login"
+                    id="create-submit">Submit</button>
+            </div>
+    </form>
+</body>
+
+</html>

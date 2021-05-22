@@ -1,0 +1,43 @@
+<!-- Modal HTML -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./modals/modals.js"></script>
+    <link rel="stylesheet" href="./modals/modalstyle.css" />
+</head>
+
+<body>
+    <form id="login-form">
+        <div class="modal-header">
+            <span id="title">
+                <h4 class="modal-title">Login</h4>
+            </span>
+            <span id="close-login">
+                <button type="button" id="close-button" class="close-login" data-dismiss="modal"
+                    aria-hidden="true">&times;</button>
+            </span>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" class="form-control" required id="username-login">
+            </div>
+            <div class="form-group">
+                <div class="clearfix">
+                    <label>Password</label>
+                </div>
+
+                <input type="password" class="form-control" required id="password-login">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary pull-right" title="Login" id="login-submit">Login</button>
+        </div>
+    </form>
+</body>
+
+</html>
